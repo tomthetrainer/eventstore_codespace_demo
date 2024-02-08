@@ -12,6 +12,4 @@ Then the student would need to run this command, in the future I may load this a
 
 The -d runs it in the background. 
 
-docker run -d --name esdb-node -it -p 2113:2113 -p 1113:1113 \
-    eventstore/eventstore:latest --insecure --run-projections=All \
-    --enable-external-tcp --enable-atom-pub-over-http
+docker run -d --name esdb-node -it -p 2113:2113 -p 1113:1113 eventstore/eventstore:latest --insecure --run-projections=All --enable-external-tcp --enable-atom-pub-over-http
